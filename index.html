@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+        <label for="infixExpression">Expresión Infija:</label>
+        <input type="text" id="infixExpression">
+        <button id="convertButton">Convertir a Prefija</button>
+        <br>
+        <label for="prefixExpression">Expresión Prefija:</label>
+        <input type="text" id="prefixExpression" readonly>
+        <button id="calculateButton">Calcular</button>
+        <br>
+        <label for="result">Resultado:</label>
+        <input type="text" id="result" readonly>
+    </div>
+
+    <script type="module" src="./src/controllers/index.js"></script>
+</body>
+</html>
