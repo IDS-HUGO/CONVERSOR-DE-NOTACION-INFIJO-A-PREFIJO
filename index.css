@@ -1,74 +1,82 @@
 body {
-    font-family:'Times New Roman', Times, serif;
-    background-color: #9ebae7;
+    font-family: Arial, sans-serif;
+    background-color: #222;
     margin: 0;
-    padding-bottom: 80px;
+    padding: 0;
+    color: #fff;
 }
 
-.container {
+.contenedor-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.encabezado {
     text-align: center;
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #86d3c1;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
+    background-color: #ff6f61;
 }
 
-.calculadora {
-    background-color: #ffc0cb;
-    padding: 30px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+.encabezado img {
+    max-width: 100px;
 }
+
+.contenedor {
+    background-color: #4caf50;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 h1 {
+    color: #ffeb3b;
     text-align: center;
-    color: #333333;
 }
 
 label {
     display: block;
-    margin-bottom: 10px;
-    color: #333333;
+    margin-bottom: 5px;
 }
 
 input[type="text"] {
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
 }
 
 button {
-    padding: 12px 20px;
-    background-color: #ff8c00;
-    color: #ffffff;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 button:hover {
-    background-color: #ff7f50;
+    background-color: #0d47a1;
 }
 
-#footer {
-    font-family: monospace;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #d29e71; 
-    color: #ffffff;
-    padding: 15px 0;
+#pie_pagina {
+    background-color: #ff5252;
+    color: #fff;
     text-align: center;
+    padding: 20px 0;
 }
 
-img{
-    width: 100px;
-    height: 100px;
+#pie_pagina h1 {
+    margin: 0;
 }

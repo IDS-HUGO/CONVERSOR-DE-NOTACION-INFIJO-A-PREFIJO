@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +8,27 @@
     <link rel="icon" href="./imagenes/calcular.png" type="">
 </head>
 <body>
-    <div class="header"> <img src="./imagenes/descarga-L4ed-56-y-transformed.png" alt=""></div>
-    <div class="container">
-        <h1>Calculadora</h1>
-        <label for="infixExpression">Expresión Infija:</label>
-        <input type="text" id="infixExpression">
-        <button id="convertButton">Convertir a Prefija</button>
+    <div class="encabezado"> <img src="./imagenes/descarga-L4ed-56-y-transformed.png" alt=""></div>
+    <div class="contenedor">
+        <h1>CONVERSOR DE INFIJO A PREFIJO Y CALCULADORA</h1>
+        <label for="expresionInfija">Expresión Infija:</label>
+        <input type="text" id="expresionInfija">
+        <button id="convertirBoton">Convertir a Prefija</button>
+        <br>  
+        <label for="expresionPrefija">Expresión Prefija:</label>
+        <input type="text" id="expresionPrefija" readonly>
+        <button id="calcularBoton">Calcular</button>
         <br>
-        <label for="prefixExpression">Expresión Prefija:</label>
-        <input type="text" id="prefixExpression" readonly>
-        <button id="calculateButton">Calcular</button>
-        <br>
-        <label for="result">Resultado:</label>
-        <input type="text" id="result" readonly>
+        <label for="resultado">Resultado:</label>
+        <input type="text" id="resultado" readonly>
     </div>
 
-    <div id="footer">
+    <div id="pie_pagina">
         <h1>
           ©HUGO FRANCISCO LUIS INCLAN 2024 CONVERSOR DE NOTACION INFIJA A PREFIJA. DERECHOS RESERVADOS. UNIVERSIDAD POLITECNICA DE CHIAPAS.
         </h1>
       </div>
-
+      
     <script type="module" src="./src/controllers/index.js"></script>
 </body>
 </html>
